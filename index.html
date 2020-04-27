@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Satyam Holidays Covid Repatriatie Form</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/opensans-font.css">
+	<link rel="stylesheet" type="text/css"
+		href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<!-- Main Style Css -->
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<div class="page-content">
+		<div class="form-v1-content">
+			<div class="wizard-form">
+				<div class="form-register">
+					<div id="form-total">
+							<img src="./images/Satyam_Logo1.png" class="satyamImage" >
+						<h2>
+							<p class="step-icon"><span>01</span></p>
+							<span class="step-text">Welcome</span>
+						</h2>
+						<section>
+							<div class="inner">
+								<div class="wizard-header">
+									<h3 class="heading">Welcome to Satyam Holidays</h3>
+								</div>
+								<div class="wizard-header">
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<input type="radio" class="radio" name="radio1" id="plan-1" value="plan-1">
+										<div class="plan-total">
+											<span class="plan-title">Nederlands</span>
+											<p class="plan-text">Beste Klant <br>We hebben dit formulier gemaakt en
+												verzoeken U de gevraagde info VOLLEDIG in te vullen.
+												Na ontvangst van het ingevulde formulier blijven wij monitoren wanneer
+												de eerstvolgende repatriatievlucht wordt uitgevoerd,
+												en verstrekken zodra dat mogelijk is Uw gegevens aan de airline.<br>
+												Satyam Holidays service gericht ook in moeilijke tijden</p>
+										</div>
+										<input type="radio" class="radio" name="radio1" id="plan-2" value="plan-2">
+										<div class="plan-total">
+											<span class="plan-title">English</span>
+											<p>Esteemed Customer<br>
+												We created this form en kindly request you to COMPLETELY fill in the
+												questions.
+												After we receive same from you we will keep monitoring when the first
+												repatriating flight will take place and will
+												forward same to the airline <br>
+												Satyam Holidays
+												Service orientated also in difficult times</p>
+										</div>
+										<input type="radio" class="radio" name="radio1" id="plan-3" value="plan-3"
+											checked>
+										<div class="plan-total">
+											<h1>..........</h1>
+											<p>
+												Whatever is going on, we have the power to decide how we respond.
+												<div style="color: orangered">
+													#StayHome<br>
+													#StaySafe<br>
+													#SaveLives
+												</div>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!-- SECTION 1 -->
+						<h2>
+							<p class="step-icon"><span>02</span></p>
+							<span class="step-text">Peronal Infomation</span>
+						</h2>
+						<section>
+							<div class="inner">
+								<div class="wizard-header">
+									<h3 class="heading">Peronal Infomation</h3>
+									<p>Please enter your infomation, so we can process your
+										request. </p>
+								</div>
+								<form id="client">
+									<div class="form-row">
+										<div class="form-holder">
+											<fieldset>
+												<legend>First Name</legend>
+												<input type="text" class="form-control" id="firstName" name="firstName"
+													placeholder="First Name" required>
+											</fieldset>
+										</div>
+										<div class="form-holder">
+											<fieldset>
+												<legend>Last Name</legend>
+												<input type="text" class="form-control" id="lastName" name="lastName"
+													placeholder="Last Name" required>
+											</fieldset>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-holder ">
+											<fieldset>
+												<legend>Date of Birth</legend>
+												<input type="text" name="dateOfBirth" id="dateOfBirth"
+													class="form-control dateOfBirth" placeholder="dd/mm/yy" required>
+											</fieldset>
+										</div>
+										<div class="form-holder">
+											<fieldset>
+												<legend>Nationality</legend>
+												<input type="text" name="nationality" id="nationality"
+													class="form-control" placeholder="Nationality" required>
+											</fieldset>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-holder form-holder-2">
+											<fieldset>
+												<legend>Phone No.</legend>
+												<input type="text" name="phoneNo" id="phoneNo" class="form-control"
+													placeholder="Phone No." required>
+											</fieldset>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-holder form-holder-2">
+											<fieldset>
+												<legend>Email Address</legend>
+												<input type="email" class="form-control" id="email" name="email"
+													placeholder="Email Address" required>
+											</fieldset>
+										</div>
+									</div>
+									<div class="wizard-header">
+										<h3 class="heading">Flight Details</h3>
+									</div>
+									<div class="form-row">
+										<div class="form-holder">
+											<fieldset>
+												<legend>Airline Traveled</legend>
+												<input type="text" class="form-control" id="airlineTraveled"
+													name="airlineTraveled" placeholder="Airline Traveled" required>
+											</fieldset>
+										</div>
+										<div class="form-holder">
+											<fieldset>
+												<legend>Country Stranded</legend>
+												<input type="text" class="form-control" id="countryStranded"
+													name="countryStranded" placeholder="Country Stranded" required>
+											</fieldset>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-holder form-holder-2">
+											<fieldset>
+												<legend>Original Travel Date</legend>
+												<input type="text" class="form-control dateOfBirth"
+													id="originalTravelDate" name="originalTravelDate"
+													placeholder="dd/mm/yy" required>
+											</fieldset>
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-holder form-holder-2">
+											<legend>Comment</legend>
+											<textarea name="comment" id="comment" cols="70" rows="10"
+												placeholder="Please enter your comments"></textarea>
+										</div>
+									</div>
+									<button type="submit" class="submitButton">submit</button>
+								</form>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.steps.js"></script>
+	<script src="js/toastr.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/server.js"></script>
+</body>
+
+</html>
