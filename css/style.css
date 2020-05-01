@@ -6,6 +6,7 @@ section {
     zoom: 85%;
 }
 
+
 .page-content {
 	width: 100%;
 	margin:  0 auto;
@@ -36,7 +37,7 @@ section {
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 50px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;

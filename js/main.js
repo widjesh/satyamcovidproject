@@ -8,14 +8,17 @@ $(function(){
         autoFocus: true,
         transitionEffectSpeed: 500,
         enableFinishButton:false,
+        disablePreviousButton:true,
         titleTemplate : '<div class="title">#title#</div>',
-        labels: {
-            previous : 'Back Step',
-            next : '<i class="zmdi zmdi-arrow-right"></i>',
-            finish : '<i class="zmdi zmdi-check" class="findMe"></i>',
-            current : ''
+        onStepChanged: function (event, current, next) {
+                $('.actions > ul > li:first-child').attr('style', 'display:none');
         },
-
+        labels: {
+            finish: 'Sign Up <i class="fa fa-chevron-right"></i>',
+            next: 'Next <i class="fa fa-chevron-right"></i>',
+            previous: '<i class="fa fa-chevron-left"></i> Previous'
+        }
+      
     })
 
 });
