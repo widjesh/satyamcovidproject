@@ -45,7 +45,7 @@ $(document).ready(() => {
     });
 
     $('.dateOfBirth').datepicker({
-        yearRange: "1950:2022",
+        yearRange: "1920:2022",
         showAnim: 'drop',
         dateFormat: 'DD, d MM, yy',
         changeMonth: true,
