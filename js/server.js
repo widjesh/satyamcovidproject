@@ -23,7 +23,7 @@ $(document).ready(() => {
             email,
             comment
         };
-        fetch('http://localhost:3000/',{
+        fetch('https://mysterious-basin-41846.herokuapp.com/',{
             method: 'POST',
             body: JSON.stringify(requestObject),
             headers: {
