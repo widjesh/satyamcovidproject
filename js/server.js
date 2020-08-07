@@ -5,9 +5,9 @@ $(document).ready(() => {
         const lastName = document.getElementById('lastName').value;
         const dateOfBirth = document.getElementById('dateOfBirth').value;
         const nationality = document.getElementById('nationality').value;
-        const countryStranded = document.getElementById('countryStranded').value;
-        const originalTravelDate = document.getElementById('originalTravelDate').value;
-        const airlineTraveled = document.getElementById('airlineTraveled').value;
+        // const countryStranded = document.getElementById('countryStranded').value;
+        // const originalTravelDate = document.getElementById('originalTravelDate').value;
+        // const airlineTraveled = document.getElementById('airlineTraveled').value;
         const phoneNo = document.getElementById('phoneNo').value;
         const email = document.getElementById('email').value;
         const comment = document.getElementById('comment').value;
@@ -16,14 +16,14 @@ $(document).ready(() => {
             lastName,
             dateOfBirth,
             nationality,
-            countryStranded,
-            originalTravelDate,
-            airlineTraveled,
+            // countryStranded,
+            // originalTravelDate,
+            // airlineTraveled,
             phoneNo,
             email,
             comment
         };
-        fetch('https://mysterious-basin-41846.herokuapp.com/',{
+        fetch('http://localhost:3000/',{
             method: 'POST',
             body: JSON.stringify(requestObject),
             headers: {
